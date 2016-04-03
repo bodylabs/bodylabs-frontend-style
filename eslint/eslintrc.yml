@@ -24,13 +24,15 @@ globals:
 extends:
     # Extend the base Body Labs style, which is pulled in via peerDependencies.
     - '../../bodylabs-javascript-style/eslint/eslintrc-shared.yml'
+
+    # Pull in https://github.com/yannickcr/eslint-plugin-react
     - 'plugin:react/recommended'
 
 rules:
     # JSX.
-    # eslint-plugin-react is required
-    # https://github.com/yannickcr/eslint-plugin-react
     jsx-quotes: 'error'
+
+    # More JSX, from https://github.com/yannickcr/eslint-plugin-react
     react/jsx-curly-spacing: ['error', 'always']
     react/jsx-equals-spacing: ['error', 'never']
     react/jsx-indent: 'error'
